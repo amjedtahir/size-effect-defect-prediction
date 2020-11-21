@@ -1,0 +1,326 @@
+***RFC***
+----------------------------------------
+
+Call:
+glm(formula = bug ~ LOC + rfc + rfc * LOC, family = "poisson", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.2128  -0.2102  -0.1592  -0.1219   2.8019  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -2.46358    0.98419  -2.503  0.01231 * 
+LOC         -0.75754    0.30279  -2.502  0.01235 * 
+rfc          0.13971    0.04571   3.057  0.00224 **
+LOC:rfc     -0.01444    0.00514  -2.809  0.00496 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 91.155  on 476  degrees of freedom
+Residual deviance: 71.672  on 473  degrees of freedom
+AIC: 102.29
+
+Number of Fisher Scoring iterations: 7
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                              bug            
+---------------------------------------------
+LOC                        -0.758**          
+                            (0.303)          
+                                             
+rfc                        0.140***          
+                            (0.046)          
+                                             
+LOC:rfc                    -0.014***         
+                            (0.005)          
+                                             
+Constant                   -2.464**          
+                            (0.984)          
+                                             
+---------------------------------------------
+Observations                  477            
+Log Likelihood              -47.143          
+Akaike Inf. Crit.           102.286          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+
+
+***WMC***
+----------------------------------------
+
+Call:
+glm(formula = bug ~ LOC + wmc + wmc * LOC, family = "poisson", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1599  -0.2151  -0.1916  -0.1769   3.5501  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -4.155026   1.025326  -4.052 5.07e-05 ***
+LOC         -0.069256   0.210276  -0.329  0.74188    
+wmc          0.143508   0.053728   2.671  0.00756 ** 
+LOC:wmc     -0.014397   0.005792  -2.486  0.01293 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 91.155  on 476  degrees of freedom
+Residual deviance: 83.746  on 473  degrees of freedom
+AIC: 114.36
+
+Number of Fisher Scoring iterations: 6
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                              bug            
+---------------------------------------------
+LOC                         -0.069           
+                            (0.210)          
+                                             
+wmc                        0.144***          
+                            (0.054)          
+                                             
+LOC:wmc                    -0.014**          
+                            (0.006)          
+                                             
+Constant                   -4.155***         
+                            (1.025)          
+                                             
+---------------------------------------------
+Observations                  477            
+Log Likelihood              -53.180          
+Akaike Inf. Crit.           114.360          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+***CBO***
+----------------------------------------
+
+Call:
+glm(formula = bug ~ LOC + cbo + cbo * LOC, family = "poisson", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1592  -0.2190  -0.2059  -0.1947   3.6356  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -4.331946   1.085132  -3.992 6.55e-05 ***
+LOC          0.068431   0.198404   0.345    0.730    
+cbo          0.022637   0.040121   0.564    0.573    
+LOC:cbo     -0.001508   0.004747  -0.318    0.751    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 91.155  on 476  degrees of freedom
+Residual deviance: 85.690  on 473  degrees of freedom
+AIC: 116.3
+
+Number of Fisher Scoring iterations: 7
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                              bug            
+---------------------------------------------
+LOC                          0.068           
+                            (0.198)          
+                                             
+cbo                          0.023           
+                            (0.040)          
+                                             
+LOC:cbo                     -0.002           
+                            (0.005)          
+                                             
+Constant                   -4.332***         
+                            (1.085)          
+                                             
+---------------------------------------------
+Observations                  477            
+Log Likelihood              -54.152          
+Akaike Inf. Crit.           116.304          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+***LCOM***
+----------------------------------------
+
+Call:
+glm(formula = bug ~ LOC + lcom + lcom * LOC, family = "poisson", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1076  -0.2144  -0.2054  -0.1957   3.6519  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -4.2334650  1.0569442  -4.005 6.19e-05 ***
+LOC          0.0699140  0.1983712   0.352   0.7245    
+lcom         0.0030505  0.0012876   2.369   0.0178 *  
+LOC:lcom    -0.0003275  0.0001456  -2.250   0.0245 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 91.155  on 476  degrees of freedom
+Residual deviance: 85.456  on 473  degrees of freedom
+AIC: 116.07
+
+Number of Fisher Scoring iterations: 6
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                              bug            
+---------------------------------------------
+LOC                          0.070           
+                            (0.198)          
+                                             
+lcom                        0.003**          
+                            (0.001)          
+                                             
+LOC:lcom                   -0.0003**         
+                           (0.0001)          
+                                             
+Constant                   -4.233***         
+                            (1.057)          
+                                             
+---------------------------------------------
+Observations                  477            
+Log Likelihood              -54.035          
+Akaike Inf. Crit.           116.070          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+***FANIN***
+----------------------------------------
+
+Call:
+glm(formula = bug ~ LOC + fanin + fanin * LOC, family = "poisson", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.2037  -0.2219  -0.2123  -0.1997   3.6624  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -4.246453   1.071074  -3.965 7.35e-05 ***
+LOC          0.083562   0.195537   0.427    0.669    
+fanin       -0.004134   0.053020  -0.078    0.938    
+LOC:fanin    0.001762   0.006279   0.281    0.779    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 91.155  on 476  degrees of freedom
+Residual deviance: 86.265  on 473  degrees of freedom
+AIC: 116.88
+
+Number of Fisher Scoring iterations: 7
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                              bug            
+---------------------------------------------
+LOC                          0.084           
+                            (0.196)          
+                                             
+fanin                       -0.004           
+                            (0.053)          
+                                             
+LOC:fanin                    0.002           
+                            (0.006)          
+                                             
+Constant                   -4.246***         
+                            (1.071)          
+                                             
+---------------------------------------------
+Observations                  477            
+Log Likelihood              -54.439          
+Akaike Inf. Crit.           116.878          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+***FANOUT***
+----------------------------------------
+
+Call:
+glm(formula = bug ~ LOC + fanout + fanout * LOC, family = "poisson", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.9833  -0.2287  -0.1675  -0.1328   2.9297  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -4.30080    1.12695  -3.816 0.000135 ***
+LOC         -0.18063    0.24013  -0.752 0.451922    
+fanout       0.38184    0.14528   2.628 0.008581 ** 
+LOC:fanout  -0.03851    0.01657  -2.324 0.020149 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 91.155  on 476  degrees of freedom
+Residual deviance: 77.711  on 473  degrees of freedom
+AIC: 108.32
+
+Number of Fisher Scoring iterations: 7
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                              bug            
+---------------------------------------------
+LOC                         -0.181           
+                            (0.240)          
+                                             
+fanout                     0.382***          
+                            (0.145)          
+                                             
+LOC:fanout                 -0.039**          
+                            (0.017)          
+                                             
+Constant                   -4.301***         
+                            (1.127)          
+                                             
+---------------------------------------------
+Observations                  477            
+Log Likelihood              -50.162          
+Akaike Inf. Crit.           108.325          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------

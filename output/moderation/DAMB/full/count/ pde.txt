@@ -1,0 +1,98 @@
+pde 
+
+***Moderation Continuous Full Model***
+----------------------------------------
+
+Call:
+glm(formula = bug ~ (rfc + wmc + cbo + lcom + fanin + fanout) * 
+    LOC, family = poisson, data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.0633  -0.6905  -0.4582  -0.3054   5.3435  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -5.1687860  0.4473840 -11.553  < 2e-16 ***
+rfc          0.0088274  0.0190604   0.463   0.6433    
+wmc          0.0504687  0.0365021   1.383   0.1668    
+cbo         -0.7508502  0.4266969  -1.760   0.0785 .  
+lcom        -0.0124660  0.0027315  -4.564 5.02e-06 ***
+fanin        0.7241212  0.4161663   1.740   0.0819 .  
+fanout       0.8625352  0.4165108   2.071   0.0384 *  
+LOC          0.7161132  0.1152764   6.212 5.23e-10 ***
+rfc:LOC      0.0005746  0.0031020   0.185   0.8530    
+wmc:LOC     -0.0103364  0.0062179  -1.662   0.0964 .  
+cbo:LOC      0.1073612  0.0776265   1.383   0.1666    
+lcom:LOC     0.0018596  0.0004142   4.490 7.14e-06 ***
+fanin:LOC   -0.1014495  0.0755890  -1.342   0.1796    
+fanout:LOC  -0.1280489  0.0756646  -1.692   0.0906 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 1653.6  on 1487  degrees of freedom
+Residual deviance: 1262.9  on 1474  degrees of freedom
+AIC: 1780.7
+
+Number of Fisher Scoring iterations: 8
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                              bug            
+---------------------------------------------
+rfc                          0.009           
+                            (0.019)          
+                                             
+wmc                          0.050           
+                            (0.037)          
+                                             
+cbo                         -0.751*          
+                            (0.427)          
+                                             
+lcom                       -0.012***         
+                            (0.003)          
+                                             
+fanin                       0.724*           
+                            (0.416)          
+                                             
+fanout                      0.863**          
+                            (0.417)          
+                                             
+LOC                        0.716***          
+                            (0.115)          
+                                             
+rfc:LOC                      0.001           
+                            (0.003)          
+                                             
+wmc:LOC                     -0.010*          
+                            (0.006)          
+                                             
+cbo:LOC                      0.107           
+                            (0.078)          
+                                             
+lcom:LOC                   0.002***          
+                           (0.0004)          
+                                             
+fanin:LOC                   -0.101           
+                            (0.076)          
+                                             
+fanout:LOC                  -0.128*          
+                            (0.076)          
+                                             
+Constant                   -5.169***         
+                            (0.447)          
+                                             
+---------------------------------------------
+Observations                 1,488           
+Log Likelihood             -876.342          
+Akaike Inf. Crit.          1,780.684         
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+
+

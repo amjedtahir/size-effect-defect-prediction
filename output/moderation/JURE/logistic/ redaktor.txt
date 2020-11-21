@@ -1,0 +1,327 @@
+**** redaktor ****
+
+
+***RFC***
+----------------------------------------
+
+Call:
+glm(formula = buggy ~ LOC + rfc + rfc * LOC, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.8007  -0.6293  -0.5618  -0.2646   2.2325  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -4.552051   1.798221  -2.531   0.0114 *
+LOC          0.756602   0.388429   1.948   0.0514 .
+rfc         -0.085002   0.102858  -0.826   0.4086  
+LOC:rfc      0.006522   0.014291   0.456   0.6481  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 150.86  on 175  degrees of freedom
+Residual deviance: 144.74  on 172  degrees of freedom
+AIC: 152.74
+
+Number of Fisher Scoring iterations: 5
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                             buggy           
+---------------------------------------------
+LOC                         0.757*           
+                            (0.388)          
+                                             
+rfc                         -0.085           
+                            (0.103)          
+                                             
+LOC:rfc                      0.007           
+                            (0.014)          
+                                             
+Constant                   -4.552**          
+                            (1.798)          
+                                             
+---------------------------------------------
+Observations                  176            
+Log Likelihood              -72.372          
+Akaike Inf. Crit.           152.744          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+
+
+***WMC***
+----------------------------------------
+
+Call:
+glm(formula = buggy ~ LOC + wmc + wmc * LOC, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.9388  -0.6216  -0.5536  -0.3299   2.6248  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -3.07449    1.55291  -1.980   0.0477 *
+LOC          0.51853    0.33191   1.562   0.1182  
+wmc         -0.43013    0.25575  -1.682   0.0926 .
+LOC:wmc      0.04699    0.03434   1.369   0.1711  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 150.86  on 175  degrees of freedom
+Residual deviance: 143.04  on 172  degrees of freedom
+AIC: 151.04
+
+Number of Fisher Scoring iterations: 6
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                             buggy           
+---------------------------------------------
+LOC                          0.519           
+                            (0.332)          
+                                             
+wmc                         -0.430*          
+                            (0.256)          
+                                             
+LOC:wmc                      0.047           
+                            (0.034)          
+                                             
+Constant                   -3.074**          
+                            (1.553)          
+                                             
+---------------------------------------------
+Observations                  176            
+Log Likelihood              -71.522          
+Akaike Inf. Crit.           151.044          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+***CBO***
+----------------------------------------
+
+Call:
+glm(formula = buggy ~ LOC + cbo + cbo * LOC, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.6931  -0.6131  -0.5815  -0.4680   2.0395  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -3.191645   1.315346  -2.426   0.0152 *
+LOC          0.291242   0.251400   1.158   0.2467  
+cbo          0.029409   0.064018   0.459   0.6460  
+LOC:cbo     -0.006368   0.011981  -0.532   0.5951  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 150.86  on 175  degrees of freedom
+Residual deviance: 149.16  on 172  degrees of freedom
+AIC: 157.16
+
+Number of Fisher Scoring iterations: 5
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                             buggy           
+---------------------------------------------
+LOC                          0.291           
+                            (0.251)          
+                                             
+cbo                          0.029           
+                            (0.064)          
+                                             
+LOC:cbo                     -0.006           
+                            (0.012)          
+                                             
+Constant                   -3.192**          
+                            (1.315)          
+                                             
+---------------------------------------------
+Observations                  176            
+Log Likelihood              -74.580          
+Akaike Inf. Crit.           157.161          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+***LCOM***
+----------------------------------------
+
+Call:
+glm(formula = buggy ~ LOC + lcom + lcom * LOC, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.6267  -0.6117  -0.6069  -0.5712   1.9016  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)
+(Intercept)   -1.74469    1.06335  -1.641    0.101
+LOC            0.02735    0.18938   0.144    0.885
+lcom           8.67091 1448.13417   0.006    0.995
+LOC:lcom      -5.81331  576.72478  -0.010    0.992
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 150.86  on 175  degrees of freedom
+Residual deviance: 145.23  on 172  degrees of freedom
+AIC: 153.23
+
+Number of Fisher Scoring iterations: 22
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                             buggy           
+---------------------------------------------
+LOC                          0.027           
+                            (0.189)          
+                                             
+lcom                         8.671           
+                          (1,448.134)        
+                                             
+LOC:lcom                    -5.813           
+                           (576.725)         
+                                             
+Constant                    -1.745           
+                            (1.063)          
+                                             
+---------------------------------------------
+Observations                  176            
+Log Likelihood              -72.613          
+Akaike Inf. Crit.           153.226          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+***FANIN***
+----------------------------------------
+
+Call:
+glm(formula = buggy ~ LOC + fanin + fanin * LOC, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7479  -0.6364  -0.5784  -0.4121   2.0602  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -2.25542    1.19432  -1.888    0.059 .
+LOC          0.14176    0.21063   0.673    0.501  
+fanin       -0.18937    0.25254  -0.750    0.453  
+LOC:fanin    0.02481    0.03977   0.624    0.533  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 150.86  on 175  degrees of freedom
+Residual deviance: 147.06  on 172  degrees of freedom
+AIC: 155.06
+
+Number of Fisher Scoring iterations: 7
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                             buggy           
+---------------------------------------------
+LOC                          0.142           
+                            (0.211)          
+                                             
+fanin                       -0.189           
+                            (0.253)          
+                                             
+LOC:fanin                    0.025           
+                            (0.040)          
+                                             
+Constant                    -2.255*          
+                            (1.194)          
+                                             
+---------------------------------------------
+Observations                  176            
+Log Likelihood              -73.532          
+Akaike Inf. Crit.           155.064          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------
+***FANOUT***
+----------------------------------------
+
+Call:
+glm(formula = buggy ~ LOC + fanout + fanout * LOC, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0458  -0.5854  -0.4771  -0.2474   2.4888  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -6.99391    2.40822  -2.904  0.00368 **
+LOC          0.84908    0.42572   1.994  0.04610 * 
+fanout       1.43454    0.46430   3.090  0.00200 **
+LOC:fanout  -0.23514    0.07977  -2.948  0.00320 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 150.86  on 175  degrees of freedom
+Residual deviance: 133.66  on 172  degrees of freedom
+AIC: 141.66
+
+Number of Fisher Scoring iterations: 6
+
+
+=============================================
+                      Dependent variable:    
+                  ---------------------------
+                             buggy           
+---------------------------------------------
+LOC                         0.849**          
+                            (0.426)          
+                                             
+fanout                     1.435***          
+                            (0.464)          
+                                             
+LOC:fanout                 -0.235***         
+                            (0.080)          
+                                             
+Constant                   -6.994***         
+                            (2.408)          
+                                             
+---------------------------------------------
+Observations                  176            
+Log Likelihood              -66.829          
+Akaike Inf. Crit.           141.659          
+=============================================
+Note:             *p<0.1; **p<0.05; ***p<0.01
+END
+----------------------------------------

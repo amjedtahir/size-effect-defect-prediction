@@ -1,0 +1,155 @@
+**** systemdata ****
+
+
+
+----------------------------------------
+RFC
+
+Causal Mediation Analysis 
+
+Nonparametric Bootstrap Confidence Intervals with the Percentile Method
+
+                          Estimate 95% CI Lower 95% CI Upper p-value  
+ACME (control)           -0.000108    -0.004483         0.00   0.952  
+ACME (treated)           -0.000113    -0.004814         0.00   0.952  
+ADE (control)             0.002195    -0.000811         0.01   0.171  
+ADE (treated)             0.002190    -0.000864         0.01   0.171  
+Total Effect              0.002082     0.000315         0.00   0.016 *
+Prop. Mediated (control) -0.051924    -2.697023         1.55      NA  
+Prop. Mediated (treated) -0.054061    -2.922561         1.50      NA  
+ACME (average)           -0.000110    -0.004625         0.00   0.952  
+ADE (average)             0.002192    -0.000838         0.01   0.171  
+Prop. Mediated (average) -0.052993    -2.840256         1.52      NA  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Sample Size Used: 65 
+
+
+Simulations: 5000 
+
+----------------------------------------WMC
+
+Causal Mediation Analysis 
+
+Nonparametric Bootstrap Confidence Intervals with the Percentile Method
+
+                          Estimate 95% CI Lower 95% CI Upper p-value  
+ACME (control)            0.000733    -0.003973         0.01   0.681  
+ACME (treated)            0.000795    -0.004570         0.01   0.681  
+ADE (control)             0.004058    -0.000805         0.01   0.075 .
+ADE (treated)             0.004120    -0.000859         0.01   0.075 .
+Total Effect              0.004853     0.000714         0.01   0.024 *
+Prop. Mediated (control)  0.151019    -0.920537         1.09      NA  
+Prop. Mediated (treated)  0.163835    -1.022794         1.08      NA  
+ACME (average)            0.000764    -0.004263         0.01   0.681  
+ADE (average)             0.004089    -0.000842         0.01   0.075 .
+Prop. Mediated (average)  0.157427    -0.969862         1.09      NA  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Sample Size Used: 65 
+
+
+Simulations: 5000 
+
+----------------------------------------CBO
+
+Causal Mediation Analysis 
+
+Nonparametric Bootstrap Confidence Intervals with the Percentile Method
+
+                          Estimate 95% CI Lower 95% CI Upper p-value   
+ACME (control)            0.000562    -0.000204         0.00  0.2768   
+ACME (treated)            0.000654    -0.000260         0.00  0.2768   
+ADE (control)             0.004213     0.000170         0.01  0.0160 * 
+ADE (treated)             0.004305     0.000171         0.01  0.0160 * 
+Total Effect              0.004867     0.000367         0.01  0.0036 **
+Prop. Mediated (control)  0.115408    -0.064666         0.52      NA   
+Prop. Mediated (treated)  0.134351    -0.087691         0.56      NA   
+ACME (average)            0.000608    -0.000235         0.00  0.2768   
+ADE (average)             0.004259     0.000170         0.01  0.0160 * 
+Prop. Mediated (average)  0.124879    -0.075632         0.53      NA   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Sample Size Used: 65 
+
+
+Simulations: 5000 
+
+----------------------------------------LCOM
+
+Causal Mediation Analysis 
+
+Nonparametric Bootstrap Confidence Intervals with the Percentile Method
+
+                          Estimate 95% CI Lower 95% CI Upper p-value  
+ACME (control)            9.14e-05    -1.72e-04         0.00   0.485  
+ACME (treated)            9.18e-05    -1.74e-04         0.00   0.485  
+ADE (control)             4.72e-04    -6.23e-05         0.00   0.064 .
+ADE (treated)             4.73e-04    -6.23e-05         0.00   0.064 .
+Total Effect              5.64e-04     9.22e-05         0.00   0.034 *
+Prop. Mediated (control)  1.62e-01    -4.33e-01         0.82      NA  
+Prop. Mediated (treated)  1.63e-01    -4.34e-01         0.82      NA  
+ACME (average)            9.16e-05    -1.73e-04         0.00   0.485  
+ADE (average)             4.72e-04    -6.23e-05         0.00   0.064 .
+Prop. Mediated (average)  1.62e-01    -4.32e-01         0.82      NA  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Sample Size Used: 65 
+
+
+Simulations: 5000 
+
+----------------------------------------FANIN
+
+Causal Mediation Analysis 
+
+Nonparametric Bootstrap Confidence Intervals with the Percentile Method
+
+                          Estimate 95% CI Lower 95% CI Upper p-value  
+ACME (control)            4.58e-04    -2.63e-03         0.00   0.592  
+ACME (treated)            5.38e-04    -2.94e-03         0.00   0.592  
+ADE (control)             1.12e-02     1.21e-05         0.02   0.024 *
+ADE (treated)             1.13e-02     1.45e-05         0.02   0.024 *
+Total Effect              1.17e-02     1.17e-06         0.02   0.029 *
+Prop. Mediated (control)  3.91e-02    -2.62e-01         0.22      NA  
+Prop. Mediated (treated)  4.59e-02    -2.98e-01         0.24      NA  
+ACME (average)            4.98e-04    -2.76e-03         0.00   0.592  
+ADE (average)             1.12e-02     1.39e-05         0.02   0.024 *
+Prop. Mediated (average)  4.25e-02    -2.81e-01         0.23      NA  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Sample Size Used: 65 
+
+
+Simulations: 5000 
+
+----------------------------------------FANOUT
+
+Causal Mediation Analysis 
+
+Nonparametric Bootstrap Confidence Intervals with the Percentile Method
+
+                         Estimate 95% CI Lower 95% CI Upper p-value  
+ACME (control)            0.00374     -0.00539         0.02   0.429  
+ACME (treated)            0.00425     -0.00731         0.02   0.429  
+ADE (control)             0.00875     -0.00750         0.02   0.220  
+ADE (treated)             0.00927     -0.00855         0.02   0.221  
+Total Effect              0.01301      0.00109         0.02   0.028 *
+Prop. Mediated (control)  0.28761     -0.62301         1.94      NA  
+Prop. Mediated (treated)  0.32704     -0.89297         1.80      NA  
+ACME (average)            0.00400     -0.00639         0.02   0.429  
+ADE (average)             0.00901     -0.00814         0.02   0.221  
+Prop. Mediated (average)  0.30733     -0.76247         1.87      NA  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Sample Size Used: 65 
+
+
+Simulations: 5000 
+

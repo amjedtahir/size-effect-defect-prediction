@@ -1,0 +1,14 @@
+## Link to datasets ##
+
+* DAMB open-source projects dataset
+
+D’Ambros, M., Lanza, M., & Robbes, R. (2012). Evaluating defect prediction approaches: a benchmark and an extensive comparison. Empirical Software Engineering, 17(4-5), 531-577.
+
+http://bug.inf.usi.ch/index.php
+
+
+* JURE defects dataset (open-source and industrial programs)
+
+Jureczko, M., & Madeyski, L. (2010). Towards identifying software project clusters with regard to defect prediction. In Proceedings of the 6th International Conference on Predictive Models in Software Engineering (pp. 1-10).
+
+https://zenodo.org/communities/seacraft/search?page=2&size=20&q=Jureckzo#
