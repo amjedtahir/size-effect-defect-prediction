@@ -5,14 +5,15 @@ This repository includes data, results and scripts from our analysis of the clas
 * Version 1.0.0
 
 ### What does this repository include? ###
-* A local copy of data that were obtained from three different datasets
-* SPSS scripts that used for the mediation and moderation analysis.
-* R script to obtain used for the similarity analysis, and also to generate plots.
-* Raw results obtained from the analysis
+* A local copy of data that were obtained from three different datasets ```(../data/)```
+* R scripts that used for the mediation and moderation analysis ```(../scripts/comparision)```
+* R script to obtain used for the similarity analysis, and also to generate plots ```(../scripts/)```
+* Raw results obtained from the analysis ```(../output/)``` 
+* graphs for moderation analysis and also for data distribution ```(../graphs/)``` 
 
 
 ### Admin and team ###
-* Repo owner or admin: Amjed Tahir (aatahir)
+* Repo owner or admin: Amjed Tahir (@amjedtahir)
 * Other community or team contact: Ebo Bennin and Xun Xiao
 
 ### Licence ###
