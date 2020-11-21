@@ -12,7 +12,8 @@ This repository includes data, results and scripts from our analysis of the clas
 
 
 ### Admin and team ###
-* Repo owner or admin: Amjed Tahir (amjedtahir)
+* Repo owner or admin: Amjed Tahir (aatahir)
+* Other community or team contact: Ebo Bennin and Xun Xiao
 
 ### Licence ###
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
